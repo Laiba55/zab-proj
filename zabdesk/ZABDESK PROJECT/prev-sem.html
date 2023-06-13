@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="prev-sem.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="top">
+      <img src="logo.png" style="width: 120px;margin-top:20px;margin-left:20px ">
+    </div>
+    <div class="signout">
+      <button class="signout-button" onclick="signOut()">Sign Out</button>
+    </div>
+    <div class="navbar">
+      <a href="#" onclick="goToHomePage()">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Courses
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#" style="color: red;">Course Registration</a>
+          <a href="current-sem.html">Current Semester</a>
+          <a href="prev-sem.html">Previous Semester</a>
+          <a href="printingrep.html" target="_self">Printing Report</a>
+          <a href="#" style="color: red;">Course Withdrawal</a>
+          <a href="#" style="color: red;">Course Improvement</a>
+          <a href="result.html">Result Semester</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Class Schedule
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#" style="color: indianred;">Course Registration</a>
+          <a href="sch.html">Current Week Schedule</a>
+          <a href="#">Advance Week</a>
+          <a href="#">Class Week Schedule</a>
+          <a href="#">Exam Schedule</a>
+          <a href="#">Daily Class Schedule</a>
+        </div>
+      </div>
+      <a href="#news">Upload Certificate</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="sidebar">
+      <div class="card">
+        <div class="profile-pic">
+          <img src="profile.png" alt="Profile Picture" id="profile-pic">
+        </div>
+        <div class="update-image">
+          <label for="input-file">Update Image</label>
+          <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+        </div>
+        <div class="print-admit-card">
+          <button type="button" class="print-button">Click Here to Print Admit Card</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="prevcourse-box">
+      <table style="width:100%">
+        <tr style="background-color:#0c54a3;color:white">
+          <td style="text-align: center;">Course Registered in previous semster</td>
+        </tr>
+      </table>
+      <br>
+      <table style="width:100%">
+        <tr>
+          <td><b>Student</b></td>
+          <td>Ramsha</td>
+          <td><b>Section</b></td>
+          <td>BSC/BS 6F</td>
+          <td><b>Semester</b></td>
+        </tr>
+      </table>
+      <br>
+
+
+      <table style="width:100%">
+        <tr>
+          <td><b>S.#<b></td>
+          <td>Couse Name</td>
+          <td><b>Faculty</b></td>
+          <td>Semester</td>
+          <td><b>With class</b></td>
+          <td>Outline</td>
+          <td>Files</td>
+
+
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Calculus and Analytical Geometry</td>
+          <td>Waqar Ahmed</td>
+          <td>Fall 2020</td>
+          <td>BCS/BS 1F</td>
+          <td><a href="outline.html">Outline</a></td>
+          <td><a href="#">Files</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Introduction to Computer Science</td>
+          <td>Sadia Aziz</td>
+          <td>Fall 2020</td>
+          <td>BCS/BS 1F</td>
+          <td><a href="outline.html">Outline</a></td>
+          <td><a href="#">Files</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>English Composition and Comprehension</td>
+          <td>farhan Raja</td>
+          <td>Fall 2020</td>
+          <td>BCS/BS 1F</td>
+          <td><a href="outline.html">Outline</a></td>
+          <td><a href="#">Files</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Fundamentals of Programming</td>
+          <td>Dr. Ammir Zeb</td>
+          <td>Fall 2020</td>
+          <td>BCS/BS 1F</td>
+          <td><a href="outline.html">Outline</a></td>
+          <td><a href="#">Files</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Applied Physics</td>
+          <td>Muhammad Umair</td>
+          <td>Fall 2020</td>
+          <td>BCS/BS 1F</td>
+          <td><a href="outline.html">Outline</a></td>
+          <td><a href="#">Files</a></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Digital Logic Design</td>
+          <td>Khalil ur Rehman</td>
+          <td>Fall 2020</td>
+          <td>BCS/BS 1F</td>
+          <td><a href="outline.html">Outline</a></td>
+          <td><a href="#">Files</a></td>
+        </tr>
+        <td>7</td>
+        <td>Object Oriented Programming Techniques</td>
+        <td>Ali Mobin</td>
+        <td>Spring 2020</td>
+        <td>BCS/BS 1F</td>
+        <td><a href="outline.html">Outline</a></td>
+        <td><a href="#">Files</a></td>
+        </tr>
+        <td>8</td>
+        <td>Discrete Mathematical Structures</td>
+        <td>Faria Jameel</td>
+        <td>Spring 2020</td>
+        <td>BCS/BS 1F</td>
+        <td><a href="outline.html">Outline</a></td>
+        <td><a href="#">Files</a></td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2023 Your Website. All rights reserved.</p>
+  </footer>
+  <script>
+    let profilePic = document.getElementById("profile-pic");
+    let inputFile = document.getElementById("input-file");
+
+    inputFile.onchange = function () {
+      profilePic.src = URL.createObjectURL(inputFile.files[0]);
+    };
+    function signOut() {
+
+      window.location.href = "index.html";
+    }
+
+    function goToHomePage() {
+      window.location.href = "home.html";
+    }
+
+  </script>
+</body>
+
+</html>

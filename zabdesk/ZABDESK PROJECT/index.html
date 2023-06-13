@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ZABDESK</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Teaching's Evaluation</a>
+            <a href="#">EDC Job Portal</a>
+            <a href="#">IS / Thesis Portal</a>
+            <a href="#">Contact</a>
+
+        </nav>
+    </header>
+
+
+    <div class="container">
+
+        <form class="login-form">
+            <h3>Login</h3>
+            <br>
+            <div class="input-field">
+                <h4>Student ID</h4>
+                <input id="studentID" type="text" placeholder="Enter your student ID">
+            </div>
+            <br>
+            <div class="input-field">
+                <h4>Password</h4>
+                <input id="password" type="password" placeholder="Enter your password">
+            </div>
+            <div id="error" class="error"></div>
+            <br>
+            <div class="input-field">
+                <input type="button" value="Login" onclick="validateLogin()">
+                <div class="pass-txt"><a href="change-pass.html" target="_blank">Change password?</a></div>
+            </div>
+        </form>
+
+    </div>
+
+
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+
+            <div class="topnav" style="margin: 30px;">
+                <a class="active" href="#Notice Board" style="background-color: #038455;">Notice Board</a>
+                <a href="#HEC RESOURCES">HEC RESOURCES</a>
+                <a href="#Anti Plagiarism">Anti Plagiarism</a>
+            </div>
+            <div class="right-side-content">
+                <b style="margin: 10px 10px 10px 5px;margin-top:30px">ADMIT CARD VERIFICATION</b>
+                <p style="margin: 10px 10px 10px 5px;">The exam dept. will be verifying the final exams admit cards of
+                    all registered students from Wednesday 10th till Sat, 20th May 2023, after which a certain late fee
+                    will be charged for the same. For details</p>
+                <a href="#" style="margin: 10px 10px 10px 5px;">Download Notice </a>
+            </div>
+            <!-- <div class="right-side-content-3">
+                <b style="margin: 15px 15px 15px 15px;margin-top:30px">On-Line Registration </b>
+                <p style="margin: 15px 15px 15px 10px;">On-Line Registration for Spring 2023 will start from February
+                    08, 2023. All students are required to register on-line through </p>
+                <a href="https://springzabdesk.szabist.edu.pk/student.asp?ASIUUFGUFGF=2"
+                    style="margin: 15px 15px 15px 10px;">https://springzabdesk.szabist.edu.pk </a>
+            </div> -->
+            <!-- <div class="right-side-content-1">
+                <b style="margin: 15px 15px 15px 15px;margin-top:30px">SZABIST Scholarship</b>
+                <p style="margin: 15px 15px 15px 10px;">We have Re-Opened SZABIST Need-Based Scholarship 22-23
+                    applications for New Students. For further details please visit:</p>
+                <a href="#" style="margin: 15px 15px 15px 10px;">Click Here</a>
+            </div>  -->
+            <div class="right-side-content-2">
+                <b style=>Generate Online Fees Challan</b>
+                <p>For creating Payment Challan Click Here.For Re-printing Payment
+                    Challan</p>
+                <a href="#" >Here</a>
+            </div>
+            <!-- <div class="right-side-content-4">
+          <b style="margin: 15px 15px 15px 15px;margin-top:30px">Fee Notice Spring-2023</b>
+          <p style="margin: 15px 15px 15px 10px;">Last date to submit the fee deadline for Spring 2023 semester is Friday, february 10th, 2023 for further detail please download fee </p>
+          <a href="#" style="margin: 15px 15px 15px 10px;">Download fees Guideline. </a> </div> -->
+
+        </div>
+    </div>
+    <button onclick="togglePopup()">
+        <img src="mood-board.png" alt="Image">
+    </button>
+
+
+
+
+
+    <script>
+        function validateLogin() {
+            var studentID = document.getElementById("studentID").value;
+            var password = document.getElementById("password").value;
+
+            // Validate student ID (integer form)
+            if (!isNaN(parseInt(studentID))) {
+                // Validate password (contains at least one uppercase, one lowercase, and one numeric character)
+                var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
+                if (passwordRegex.test(password)) {
+                    // Redirect to the home page or perform other actions
+                    window.location.href = "home.html";
+                } else {
+                    displayError("Invalid password. Password should contain at least one uppercase letter, one lowercase letter, and one numeric character.");
+                }
+            } else {
+                displayError("Invalid student ID. Student ID should be in integer form.");
+            }
+        }
+
+        function displayError(errorMessage) {
+            var errorElement = document.getElementById("error");
+            errorElement.innerHTML = "<p>" + errorMessage + "</p>";
+        }
+
+
+
+        function togglePopup() {
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+
+
+
+    </script>
+</body>
+
+</html>

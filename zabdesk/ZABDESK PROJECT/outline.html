@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="outline.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="top">
+      <img src="logo.png" style="width: 120px;margin-top:20px;margin-left:20px ">
+    </div>
+    <div class="signout">
+      <button class="signout-button" onclick="signOut()">Sign Out</button>
+    </div>
+    <div class="navbar">
+      <a href="#" onclick="goToHomePage()">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Courses
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#" style="color: red;">Course Registration</a>
+          <a href="current-sem.html">Current Semester</a>
+          <a href="prev-sem.html">Previous Semester</a>
+          <a href="printingrep.html" target="_self">Printing Report</a>
+          <a href="#" style="color: red;">Course Withdrawal</a>
+          <a href="#" style="color: red;">Course Improvement</a>
+          <a href="result.html">Result Semester</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Class Schedule
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#" style="color: indianred;">Course Registration</a>
+          <a href="sch.html">Current Week Schedule</a>
+          <a href="#">Advance Week</a>
+          <a href="#">Class Week Schedule</a>
+          <a href="#">Exam Schedule</a>
+          <a href="#">Daily Class Schedule</a>
+        </div>
+      </div>
+      <a href="#news">Upload Certificate</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="card">
+        <div class="profile-pic">
+          <img src="profile.png" alt="Profile Picture" id="profile-pic">
+        </div>
+        <div class="update-image">
+          <label for="input-file">Update Image</label>
+          <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+        </div>
+        <div class="print-admit-card">
+          <button type="button" class="print-button">Click Here to Print Admit Card</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="course-box">
+      <br>
+      <table style="width:100%">
+        <tr style="background-color:#0c54a3;color:white">
+          <td style="text-align: center;"> Course Outline
+          </td>
+        </tr>
+
+      </table>
+      <table style="width:100%">
+        <tr>
+          <td style="background-color: #f5f5f5; color: black;"><b>Student</b></td>
+          <td>Ramsha</td>
+          <td><b>Section</b></td>
+          <td>BSC/BS 6F</td>
+          <td><b>Semester</b></td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <td>Class:</td>
+          <td>BCS/BS-6 (F)</td>
+        </tr>
+        <tr>
+          <td>Course:</td>
+          <td>CSC1205 Technical and Business Writing</td>
+        </tr>
+
+        <tr>
+          <td>Instructor:</td>
+          <td>Syed Muhammad Sajid Siraj</td>
+        </tr>
+
+
+      </table>
+
+      <table style="width:100%">
+        <tr style="background-color:#0c54a3;color:white">
+          <td style="text-align: center;"> Class details
+          </td>
+        </tr>
+
+      </table>
+      <table>
+        <tr>
+          <td>Class Timing and Room</td>
+
+        </tr>
+        <tr>
+          <td>Session Day(s)</td>
+          <td>Saturday</td>
+        </tr>
+
+        <tr>
+          <td>Credit Hours:</td>
+          <td>3/class hours(per week) | 0/lab hours(per week)</td>
+        </tr>
+        <tr>
+          <td>Course Prerequisites:</td>
+
+        </tr>
+        <tr>
+          <td>Consultation Time</td>
+          <td>2.00-3.00</td>
+        </tr>
+
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>syed.sajid.siraj@szabist.pk</td>
+        </tr>
+
+      </table>
+
+      <table style="width:100%">
+        <tr style="background-color:#0c54a3;color:white">
+          <td style="text-align: center;">Course Description
+          </td>
+        </tr>
+        <td style="background-color: #f5f5f5; color: black;">This course focuses on the use of English in professional
+          contexts. The course aims to develop interpersonal communication skills in a dynamic, digitalized and globally
+          connected business world. This interactive course will create an awareness in the students about the basics of
+          communication in formal contexts, allows them to analyze the mechanics of technical business writing with the
+          use of specific registers, and experiment with different types of letters, memos, reports, proposals,
+          presentations, and manuals to communicate complex information with clarity, conciseness, and force to meet the
+          basic business communication needs of working professionals.</td>
+
+
+        <table style="width:100%">
+          <tr style="background-color:#0c54a3;color:white">
+            <td style="text-align: center;">Course Objective
+            </td>
+          </tr>
+          <td style="background-color: #f5f5f5; color: black;">Students will be able to demonstrate the use of basic and
+            advanced professional communication techniques by composing and presenting effective letters, e-mails,
+            memos, business reports and employment documents. The course will also improve their presentation skills.
+            The course will also enable students to practice aspects of structural English to improve their professional
+            communication..</td>
+
+          <table style="width:100%">
+            <tr style="background-color:#0c54a3;color:white">
+              <td style="text-align: center;">Learning Outcomes
+              </td>
+            </tr>
+            <td style="background-color: #f5f5f5; color: black;">On the completion of the course, students will be able
+              to:  identify the formal and informal communication process  examine verbal and non-verbal
+              communications skills required for professional communication  practice structural English as a way to
+              improve professional communication  apply various forms of professional communication for business
+              correspondence  demonstrate conflict resolution skills in professional settings.</td>
+
+            <table style="width:100%">
+              <tr style="background-color:#0c54a3;color:white">
+                <td style="text-align: center;">Learning Outcomes
+                </td>
+              </tr>
+              <td style="background-color: #f5f5f5; color: black;">Classroom teaching will comprise of lectures, class
+                discussions, activities as well as practical demonstration of all aspects of professional communication.
+              </td>
+              <table style="width:100%">
+                <tr style="background-color:#0c54a3;color:white">
+                  <td style="text-align: center;">Expected Class Conduct
+                  </td>
+                </tr>
+                <td style="background-color: #f5f5f5; color: black;">Prompt arrival and regular attendance are extremely
+                  important. Active participation is crucial to your success in this course. For further clarification
+                  on academic policies, please refer to the student Handbook.</td>
+
+
+
+                <table style="width:100%">
+                  <tr style="background-color:#0c54a3;color:white">
+                    <td style="text-align: center;">Course Plan
+                    </td>
+
+
+
+                    <table>
+                      <tr>
+                        <th>Week</th>
+                        <th>Chapters</th>
+                        <th>Session Topic</th>
+                        <th>Assesments</th>
+                      </tr>
+                      <tr>
+                        <td> 1</td>
+                        <td></td>
+                        <td>Communication foundations and The basics of Business Writing</td>
+                        <td>N/A</td>
+
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td> </td>
+                        <td> Brainstorming and developing an idea for FYP</td>
+                        <td>N/A</td>
+
+                      </tr>
+
+                      <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td>Organizing Email Messages and types of emails</td>
+                        <td>N/A</td>
+
+                      </tr>
+
+
+
+                      <tr>
+                        <td>4</td>
+                        <td></td>
+                        <td>Presenting ideas to supervisor</td>
+                        <td>N/A</td>
+
+                      </tr>
+
+
+                      <tr>
+                        <td>5</td>
+                        <td></td>
+                        <td>Presenting idea and basics of proposal</td>
+                        <td>N/A</td>
+
+                      </tr>
+
+                      <tr>
+                        <td>6</td>
+                        <td></td>
+                        <td>Communicating Positive Messages and Negative Messages</td>
+                        <td>N/A</td>
+
+                      </tr>
+                    </table>
+
+                    <table style="width:100%">
+                      <tr style="background-color:#0c54a3;color:white">
+                        <td style="text-align: center;">Text Book
+                        </td>
+                      </tr>
+                      <td style="background-color: #f5f5f5; color: black;">
+                        Text Book
+                        Essential of Business Communication, Mary E Guffey, 12th Edition,</td>
+                    </table>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2023 Your Website. All rights reserved.</p>
+  </footer>
+  <script>
+    let profilePic = document.getElementById("profile-pic");
+    let inputFile = document.getElementById("input-file");
+
+    inputFile.onchange = function () {
+      profilePic.src = URL.createObjectURL(inputFile.files[0]);
+    };
+    function signOut() {
+
+      window.location.href = "index.html";
+    }
+
+
+    function goToHomePage() {
+      window.location.href = "home.html";
+    }
+
+  </script>
+</body>
+
+</html>
